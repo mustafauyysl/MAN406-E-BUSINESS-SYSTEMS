@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Images Section</title>
+    <style>
+      #imgBox {
+        width: 250px;
+        height: 200px;
+        background-image: url('img/tesla-e.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Images Section</h1>
+    <hr />
+    <h2>Tesla Models</h2>
+    <img src="img/tesla-s.jpg" alt="Tesla S Model" width="250" height="250" />
+    <img
+      src="img/tesla-e.jpg"
+      alt="Tesla E Model"
+      style="width: 250px; height: 250px"
+    />
+    <img
+      src="img/tesla-x.jpg"
+      alt="Tesla X Model"
+      width="250"
+      height="250"
+      style="float: right"
+    />
+    <hr />
+    <h3>Click image to go Tesla website</h3>
+    <a href="https://www.tesla.com/">
+      <img src="img/tesla-logo.png" alt="Tesla Logo" width="300" height="300" />
+    </a>
+    <hr />
+    <h2>Image Map</h2>
+    <p>(Rear and Front Wheel)</p>
+    <img
+      src="img/tesla-s.jpg"
+      alt="Tesla S Model"
+      style="width: 400px; height: 250px; object-fit: cover"
+      usemap="#teslamap"
+    />
+    <map name="teslamap">
+      <area
+        shape="circle"
+        coords="80,180,20,20"
+        alt="Rear Wheel"
+        href="https://www.bridgestone.com.tr/"
+      />
+      <area
+        shape="circle"
+        coords="200,190,25,25"
+        alt="Front Wheel"
+        onclick="goToBridgestone()"
+      />
+    </map>
+    <hr>
+    <h2>Image Div</h2>
+    <div id="imgBox">
+      <h4>Tesla E Model</h4>
+    </div>
+    <script>
+      function goToBridgestone() {
+        alert("Visit Bridgestone website to buy best wheels :)");
+      }
+    </script>
+  </body>
+</html>
