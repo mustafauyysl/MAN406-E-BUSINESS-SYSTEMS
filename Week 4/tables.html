@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tables Section</title>
+    <style>
+      table {
+        width: 100%;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+        text-align: center;
+      }
+      table tr:nth-child(even) {
+        background-color: #eee;
+      }
+      table tr:nth-child(odd) {
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Basic Table</h1>
+    <hr />
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Student Number</th>
+        <th>Faculty</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>Mustafa</td>
+        <td>Uysal</td>
+        <td>21613088</td>
+        <td>İİBF</td>
+        <td>mustafauysaltr@hotmail.com</td>
+      </tr>
+    </table>
+    <hr />
+    <h1>Colspan Table</h1>
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th colspan="2">Phone number</th>
+      </tr>
+      <tr>
+        <td>Mustafa</td>
+        <td>Uysal</td>
+        <td>+90</td>
+        <td>5523940404</td>
+      </tr>
+    </table>
+    <hr />
+    <h1>Rowspan Table</h1>
+    <table>
+      <tr>
+        <th>Name</th>
+        <td>Mustafa Uysal</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Phone number</th>
+        <td>05523940404</td>
+      </tr>
+      <tr>
+        <td>05531238485</td>
+      </tr>
+    </table>
+  </body>
+</html>
